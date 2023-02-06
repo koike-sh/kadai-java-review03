@@ -28,8 +28,9 @@ public class BaseBallTeam {
         return win_rate;
     }
 
-    public String report(double win_rate) {
-        String result = name + " の2022年の成績は " + win + "勝 " + lose + "敗 " + draw + "分、勝率は " + win_rate + "です。";
+    public String report() {
+        double rate = getRate();
+        String result = name + " の2022年の成績は " + win + "勝 " + lose + "敗 " + draw + "分、勝率は " + rate + "です。";
         return result;
     }
 
